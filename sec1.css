@@ -1,0 +1,212 @@
+/*=== Base styles ===
+.sec1 {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.sec-1-1 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.sec-1-2 {
+  max-width: 600px;
+}
+
+.sec-1-2 h1 {
+  font-size: 48px;
+  margin: 0.5rem 0;
+}
+
+.sec-1-2-3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.btns button {
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btns button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sec1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .sec-1-1 img {
+    max-width: 200px;
+  }
+
+  .sec-1-2 h1 {
+    font-size: 32px;
+  }
+
+  .sec-1-2-3 {
+    font-size: 20px;
+  }
+
+  .btns {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btns button {
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
+*/
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+section.sec1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #fff;
+  gap: 40px;
+  height: 90vh;
+
+}
+
+/* Left Side - Profile Image */
+.sec-1-1 img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side - Text Content */
+.sec-1-2 {
+  max-width: 600px;
+}
+
+.sec-1-2-1 {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.sec-1-2 h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.sec-1-2-3 {
+  font-size: 1.5rem;
+  color: #0e76a8;
+  font-weight: 600;
+}
+
+.sec-1-2 p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btns button {
+  padding: 10px 20px;
+  background-color: #0e76a8;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.btns button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btns button:hover {
+  background-color: #095a85;
+}
+
+/* Social Icons */
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section.sec1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}

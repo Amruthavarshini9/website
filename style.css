@@ -1,0 +1,261 @@
+/* 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: darkorange;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: black;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-bar {
+    display: flex;
+    gap: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-bar li a {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.menu-bar li a:hover {
+    color: darkorange;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.hamburger.active i::before {
+    content: "\f00d";
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-bar {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        width: 180px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    .menu-bar.show {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-menu.menu-bar {
+        display: none;
+    }
+} 
+
+.navbar {
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+}
+
+.navbar .menu-bar {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar .menu-bar li a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu-bar li a:hover {
+  color: #00bcd4;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 6%;
+  }
+
+  .navbar .menu-bar {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar .menu-bar.show {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  border-radius: 3px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    display: none;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
